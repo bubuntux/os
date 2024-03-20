@@ -4,6 +4,7 @@ modules:
       - usr: /usr
 
   - type: rpm-ostree
+    repos:
     install:
       - starship
     remove:
