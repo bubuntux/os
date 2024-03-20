@@ -11,9 +11,12 @@ modules:
       - zsh
       - zsh-autosuggestions
       - zsh-syntax-highlighting
+      - neovim
     remove:
       - firefox
       - firefox-langpacks
+      - vi
+      - vim
 
   - type: default-flatpaks
     notify: true
