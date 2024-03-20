@@ -1,7 +1,7 @@
 name: os-sway
 description: Bubuntux OS
 
-base-image: ghcr.io/ublue-os/sericea
+base-image: ghcr.io/ublue-os/sericea-main
 image-version: latest
 
 modules:
