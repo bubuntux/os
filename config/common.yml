@@ -15,8 +15,6 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      - vi
-      - vim
 
   - type: default-flatpaks
     notify: true
