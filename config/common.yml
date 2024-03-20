@@ -3,14 +3,15 @@ modules:
     files:
       - usr: /usr
 
+  - type: script
+    snippets:
+      - "chmod +x /usr/bin/*"
+
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
       - starship
-      - zsh
-      - zsh-autosuggestions
-      - zsh-syntax-highlighting
       - neovim
     remove:
       - firefox
