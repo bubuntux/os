@@ -33,6 +33,11 @@ modules:
       remove:
         # - org.gnome.eog
 
+  - type: systemd
+    user:
+      enabled:
+        - kanshi.service
+
   - type: fonts
     fonts:
       nerd-fonts:
