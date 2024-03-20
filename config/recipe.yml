@@ -35,6 +35,12 @@ modules:
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         - org.mozilla.firefox
+        - com.github.tchx84.Flatseal
+        - com.slack.Slack
+        - com.valvesoftware.Steam
+        - com.discordapp.Discord
+        - org.gnome.Calculator
+        - org.kde.okular
       
       remove:
         # - org.gnome.eog
