@@ -6,7 +6,7 @@ modules:
   - type: script
     snippets:
       - "chmod +x /usr/bin/*"
-      - "curl -sS https://starship.rs/install.sh | sh -s -- --verbose --yes"
+      - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
   
   - type: rpm-ostree
     remove:
