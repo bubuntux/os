@@ -30,6 +30,11 @@ modules:
         - com.valvesoftware.Steam
         - com.discordapp.Discord
         - org.gnome.Calculator
+        - md.obsidian.Obsidian
+        - org.gimp.GIMP
+        - org.inkscape.Inkscape
+        - org.gnome.baobab
+        - org.fedoraproject.MediaWriter
         - org.kde.okular
       remove:
         # - org.gnome.eog
