@@ -34,6 +34,7 @@ modules:
         - org.gimp.GIMP
         - org.gnome.Calculator
         - org.gnome.Firmware
+        - org.gnome.TextEditor
         - org.gnome.baobab
         - org.gnome.eog
         - org.gnome.meld
