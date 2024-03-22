@@ -59,4 +59,8 @@ modules:
         - JetBrainsMono
         - SourceCodePro
 
+  - type: gschema-overrides
+    include:
+      - zz1.gschema.override 
+
   - type: signing
