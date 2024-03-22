@@ -6,6 +6,7 @@ modules:
   - type: script
     snippets:
       - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
+      - "ln -s /usr/bin/podman /usr/bin/docker"
       - "chmod +x /usr/bin/*"
   
   - type: rpm-ostree
