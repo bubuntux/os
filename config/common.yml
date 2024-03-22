@@ -5,13 +5,12 @@ modules:
 
   - type: script
     snippets:
-      - "chmod +x /usr/bin/*"
       - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
+      - "chmod +x /usr/bin/*"
   
   - type: rpm-ostree
     install:
-      - adwaita-icon-theme
-      - gnome-themes-extra
+      - adwaita-gtk2-theme
     remove:
       - firefox
       - firefox-langpacks
