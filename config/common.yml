@@ -53,14 +53,10 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
+        - DejaVuSansM
         - FiraCode
         - Hack
         - JetBrainsMono
-        - NerdFontsSymbolsOnly
         - SourceCodePro
-        - Terminus
-      google-fonts:
-        - Open Sans
-        - Roboto
 
   - type: signing
