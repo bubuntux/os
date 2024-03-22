@@ -11,7 +11,6 @@ modules:
   - type: rpm-ostree
     install:
       - adwaita-icon-theme
-      - adwaita-qt
       - gnome-themes-extra
     remove:
       - firefox
