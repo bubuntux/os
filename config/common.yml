@@ -9,6 +9,10 @@ modules:
       - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
   
   - type: rpm-ostree
+    install:
+      - adwaita-icon-theme
+      - adwaita-qt
+      - gnome-themes-extra
     remove:
       - firefox
       - firefox-langpacks
