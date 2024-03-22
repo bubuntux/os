@@ -53,7 +53,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - DejaVuSansM
+        - DejaVuSansMono
         - FiraCode
         - Hack
         - JetBrainsMono
