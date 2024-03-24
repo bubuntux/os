@@ -8,7 +8,7 @@ modules:
       - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
       - "ln -s /usr/bin/podman /usr/bin/docker"
       - "chmod +x /usr/bin/*"
-  
+
   - type: rpm-ostree
     install:
       - adwaita-gtk2-theme
@@ -28,12 +28,14 @@ modules:
         - com.github.tchx84.Flatseal
         - com.slack.Slack
         - com.valvesoftware.Steam
+        - com.protonvpn.www
         - md.obsidian.Obsidian
         - org.chromium.Chromium
         - org.fedoraproject.MediaWriter
         - org.gimp.GIMP
         - org.gnome.Calculator
         - org.gnome.Firmware
+        - org.gnome.SimpleScan
         - org.gnome.TextEditor
         - org.gnome.baobab
         - org.gnome.eog
@@ -62,6 +64,6 @@ modules:
 
   - type: gschema-overrides
     include:
-      - zz1.gschema.override 
+      - zz1.gschema.override
 
   - type: signing
