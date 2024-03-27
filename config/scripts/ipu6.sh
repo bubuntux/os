@@ -2,6 +2,10 @@
 
 set -oue pipefail
 
+rpm-ostree install akmod-intel-ipu6
+
+exit 0
+
 cd /tmp
 
 # Install ipu6-camera-bins
