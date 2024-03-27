@@ -4,6 +4,8 @@ modules:
       - usr: /usr
 
   - type: script
+    scripts:
+      - ipu6.sh
     snippets:
       - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
       - "ln -s /usr/bin/podman /usr/bin/docker"
