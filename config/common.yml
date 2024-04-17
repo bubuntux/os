@@ -22,37 +22,37 @@ modules:
       - firefox
       - firefox-langpacks
 
-  - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub (system-wide)"
-      install:
-        - com.discordapp.Discord
-        - com.github.jeromerobert.pdfarranger
-        - com.github.tchx84.Flatseal
-        - com.slack.Slack
-        - com.valvesoftware.Steam
-        - com.protonvpn.www
-        - md.obsidian.Obsidian
-        - org.chromium.Chromium
-        - org.fedoraproject.MediaWriter
-        - org.gimp.GIMP
-        - org.gnome.Calculator
-        - org.gnome.Firmware
-        - org.gnome.SimpleScan
-        - org.gnome.TextEditor
-        - org.gnome.baobab
-        - org.gnome.eog
-        - org.gnome.meld
-        - org.gtk.Gtk3theme.Adwaita-dark
-        - org.inkscape.Inkscape
-        - org.kde.okular
-        - org.mozilla.firefox
-        - org.videolan.VLC
-      remove:
-        # - org.gnome.eog
+  # - type: default-flatpaks
+  #   notify: true
+  #   system:
+  #     repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  #     repo-name: flathub
+  #     repo-title: "Flathub (system-wide)"
+  #     install:
+  #       - com.discordapp.Discord
+  #       - com.github.jeromerobert.pdfarranger
+  #       - com.github.tchx84.Flatseal
+  #       - com.slack.Slack
+  #       - com.valvesoftware.Steam
+  #       - com.protonvpn.www
+  #       - md.obsidian.Obsidian
+  #       - org.chromium.Chromium
+  #       - org.fedoraproject.MediaWriter
+  #       - org.gimp.GIMP
+  #       - org.gnome.Calculator
+  #       - org.gnome.Firmware
+  #       - org.gnome.SimpleScan
+  #       - org.gnome.TextEditor
+  #       - org.gnome.baobab
+  #       - org.gnome.eog
+  #       - org.gnome.meld
+  #       - org.gtk.Gtk3theme.Adwaita-dark
+  #       - org.inkscape.Inkscape
+  #       - org.kde.okular
+  #       - org.mozilla.firefox
+  #       - org.videolan.VLC
+  #     remove:
+  #       # - org.gnome.eog
 
   - type: systemd
     user:
