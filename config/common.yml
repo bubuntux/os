@@ -1,17 +1,10 @@
 modules:
-  # - type: akmods
-  #   install:
-  #     - v4l2loopback
-  #     #- winesync
-
   - type: files
     files:
       - usr: /usr
 
   - type: script
     snippets:
-      #- "rpm-ostree install akmod-intel-ipu6"
-      - "curl -sS https://starship.rs/install.sh | sh -s -- -b /usr/bin --verbose --yes"
       - "ln -s /usr/bin/podman /usr/bin/docker"
       - "chmod +x /usr/bin/*"
 
