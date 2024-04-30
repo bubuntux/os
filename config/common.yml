@@ -2,6 +2,7 @@ modules:
   - type: ipu6
     option: true
     other: rstrst
+    there: "123123"
 
   - type: akmods
     install:

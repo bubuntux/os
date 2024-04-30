@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+echo "XXX"
+
 # read a single variable from the configuration
 VAR=$(echo "$1" | yq -I=0 ".var") # `-I=0` makes sure the output isn't indented
 echo "$VAR"
@@ -11,3 +13,5 @@ get_yaml_array ARRAY '.array[]' "$1"
 for THING in "${ARRAY[@]}"; do
 	echo "$THING"
 done
+
+echo "DONE"
