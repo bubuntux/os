@@ -1,4 +1,8 @@
 modules:
+  - type: akmods
+    install:
+      - v4l2loopback
+
   - type: files
     files:
       - usr: /usr
@@ -11,6 +15,7 @@ modules:
   - type: rpm-ostree
     install:
       - adwaita-gtk2-theme
+      - akmod-intel-ipu6
     remove:
       - firefox
       - firefox-langpacks
