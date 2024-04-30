@@ -39,7 +39,7 @@ modules:
         - com.slack.Slack
         - com.valvesoftware.Steam
         - com.protonvpn.www
-        - md.obsidian.Obsidian
+        #- md.obsidian.Obsidian
         - org.chromium.Chromium
         - org.fedoraproject.MediaWriter
         - org.gimp.GIMP
