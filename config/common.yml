@@ -1,4 +1,8 @@
 modules:
+  - type: ipu6
+    option: true
+    other: rstrst
+
   - type: akmods
     install:
       - v4l2loopback
