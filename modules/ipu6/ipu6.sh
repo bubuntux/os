@@ -5,7 +5,6 @@ echo "XXX"
 
 echo "$0"
 echo "$1"
-echo "$2"
 
 # read a single variable from the configuration
 VAR=$(echo "$1" | yq -I=0 ".var") # `-I=0` makes sure the output isn't indented
