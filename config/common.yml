@@ -20,6 +20,8 @@ modules:
       - binutils
       - libstdc++-devel
       - libstdc++
+      - libcxx-devel
+      - libcxx
     remove:
       - firefox
       - firefox-langpacks
