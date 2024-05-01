@@ -25,6 +25,8 @@ modules:
   - type: script
     snippets:
       - 'akmods --force --kernels "6.8.7-300.fc40.x86_64" --kmod intel-ipu6'
+      - "cat /var/cache/akmods/intel-ipu6/0.0-13.20240226gitfb4c170-for-6.8.7-300.fc40.x86_64.failed.log"
+      - "cat /var/cache/akmods/intel-ipu6/*.failed.log"
       - "ln -s /usr/bin/podman /usr/bin/docker"
       - "chmod +x /usr/bin/*"
 
