@@ -12,11 +12,6 @@ modules:
     files:
       - usr: /usr
 
-  - type: script
-    snippets:
-      - "ln -s /usr/bin/podman /usr/bin/docker"
-      - "chmod +x /usr/bin/*"
-
   - type: rpm-ostree
     install:
       - adwaita-gtk2-theme
@@ -25,6 +20,12 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+
+  - type: script
+    snippets:
+      - 'akmods --force --kernels "6.8.7-300.fc40.x86_64" --kmod intel-ipu6'
+      - "ln -s /usr/bin/podman /usr/bin/docker"
+      - "chmod +x /usr/bin/*"
 
   - type: default-flatpaks
     notify: true
@@ -40,7 +41,7 @@ modules:
         - com.valvesoftware.Steam
         - com.protonvpn.www
         #- md.obsidian.Obsidian
-        - org.chromium.Chromium
+        #- org.chromium.Chromium
         - org.fedoraproject.MediaWriter
         - org.gimp.GIMP
         - org.gnome.Calculator
