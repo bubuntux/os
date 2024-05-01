@@ -17,6 +17,7 @@ modules:
       - adwaita-gtk2-theme
       - libadwaita
       - akmod-intel-ipu6
+      - binutils
     remove:
       - firefox
       - firefox-langpacks
