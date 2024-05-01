@@ -18,6 +18,8 @@ modules:
       - libadwaita
       - akmod-intel-ipu6
       - binutils
+      - libstdc++-devel
+      - libstdc++
     remove:
       - firefox
       - firefox-langpacks
