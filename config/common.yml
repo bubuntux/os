@@ -16,11 +16,6 @@ modules:
       - firefox
       - firefox-langpacks
 
-  - type: script
-    snippets:
-      - "ln -s /usr/bin/podman /usr/bin/docker"
-      - "chmod +x /usr/bin/*"
-
   - type: default-flatpaks
     notify: true
     system:
