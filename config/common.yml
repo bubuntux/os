@@ -1,9 +1,4 @@
 modules:
-  # - type: ipu6
-  #   option: true
-  #   other: rstrst
-  #   there: "123123"
-
   - type: akmods
     install:
       - v4l2loopback
@@ -17,20 +12,12 @@ modules:
       - adwaita-gtk2-theme
       - libadwaita
       - akmod-intel-ipu6
-      - binutils
-      - libstdc++-devel
-      - libstdc++
-      - libcxx-devel
-      - libcxx
     remove:
       - firefox
       - firefox-langpacks
 
   - type: script
     snippets:
-      - 'akmods --force --kernels "6.8.7-300.fc40.x86_64" --kmod intel-ipu6'
-      - "cat /var/cache/akmods/intel-ipu6/0.0-13.20240226gitfb4c170-for-6.8.7-300.fc40.x86_64.failed.log"
-      - "cat /var/cache/akmods/intel-ipu6/*.failed.log"
       - "ln -s /usr/bin/podman /usr/bin/docker"
       - "chmod +x /usr/bin/*"
 
@@ -47,8 +34,6 @@ modules:
         - com.slack.Slack
         - com.valvesoftware.Steam
         - com.protonvpn.www
-        #- md.obsidian.Obsidian
-        #- org.chromium.Chromium
         - org.fedoraproject.MediaWriter
         - org.gimp.GIMP
         - org.gnome.Calculator
@@ -57,15 +42,12 @@ modules:
         - org.gnome.TextEditor
         - org.gnome.baobab
         - org.gnome.Loupe
-        #- org.gnome.eog
         - org.gnome.meld
         - org.gtk.Gtk3theme.Adwaita-dark
         - org.inkscape.Inkscape
         - org.kde.okular
         - org.mozilla.firefox
         - org.videolan.VLC
-  #     remove:
-  #       # - org.gnome.eog
 
   - type: systemd
     user:
