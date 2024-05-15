@@ -53,10 +53,12 @@ modules:
         - org.videolan.VLC
 
   - type: systemd
+    system:
+      enabled:
+        - geoclue.service
     user:
       enabled:
         - kanshi.service
-        - geoclue.service
 
   - type: fonts
     fonts:
