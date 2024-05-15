@@ -19,6 +19,8 @@ modules:
       - adwaita-gtk2-theme
       - libadwaita
       - akmod-intel-ipu6
+      - gammastep
+      - geoclue2
     remove:
       - firefox
       - firefox-langpacks
