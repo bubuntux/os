@@ -13,6 +13,9 @@ modules:
       - adwaita-gtk2-theme
       - libadwaita
       - gammastep
+    remove:
+      - firefox
+      - firefox-langpacks
 
   - type: default-flatpaks
     notify: true
@@ -39,6 +42,8 @@ modules:
         - org.gtk.Gtk3theme.Adwaita-dark
         - org.inkscape.Inkscape
         - org.kde.okular
+        - org.mozilla.firefox
+        - om.spotify.Client
         - org.videolan.VLC
 
   - type: systemd
