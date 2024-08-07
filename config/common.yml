@@ -43,7 +43,7 @@ modules:
         - org.inkscape.Inkscape
         - org.kde.okular
         - org.mozilla.firefox
-        - om.spotify.Client
+        - com.spotify.Client
         - org.videolan.VLC
 
   - type: systemd
