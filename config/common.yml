@@ -7,19 +7,14 @@ modules:
     install:
       - adwaita-gtk2-theme
       - libadwaita
-      - gammastep
     remove:
       - firefox
       - firefox-langpacks
 
   - type: systemd
-    system:
-      enabled:
-        - geoclue.service
     user:
       enabled:
         - kanshi.service
-        - gammastep.service
 
   - type: gschema-overrides
     include:
