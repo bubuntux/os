@@ -3,21 +3,9 @@ modules:
     files:
       - usr: /usr
 
-  - type: rpm-ostree
-    install:
-      - adwaita-gtk2-theme
-      - libadwaita
-    remove:
-      - firefox
-      - firefox-langpacks
-
   - type: systemd
     user:
       enabled:
         - kanshi.service
-
-  - type: gschema-overrides
-    include:
-      - zz1.gschema.override
 
   - type: signing
