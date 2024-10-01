@@ -3,48 +3,14 @@ modules:
     files:
       - usr: /usr
 
-  #- type: akmods
-  #  install:
-  #    - v4l2loopback
-
   - type: rpm-ostree
     install:
-      #- akmod-intel-ipu6
       - adwaita-gtk2-theme
       - libadwaita
       - gammastep
     remove:
       - firefox
       - firefox-langpacks
-
-  - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub (system-wide)"
-      install:
-        - com.discordapp.Discord
-        - com.github.jeromerobert.pdfarranger
-        - com.github.tchx84.Flatseal
-        - com.slack.Slack
-        - com.valvesoftware.Steam
-        - com.protonvpn.www
-        - org.fedoraproject.MediaWriter
-        - org.gimp.GIMP
-        - org.gnome.Calculator
-        - org.gnome.Firmware
-        - org.gnome.SimpleScan
-        - org.gnome.TextEditor
-        - org.gnome.baobab
-        - org.gnome.Loupe
-        - org.gnome.meld
-        - org.gtk.Gtk3theme.Adwaita-dark
-        - org.inkscape.Inkscape
-        - org.kde.okular
-        - org.mozilla.firefox
-        - com.spotify.Client
-        - org.videolan.VLC
 
   - type: systemd
     system:
@@ -54,15 +20,6 @@ modules:
       enabled:
         - kanshi.service
         - gammastep.service
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - DejaVuSansMono
-        - FiraCode
-        - Hack
-        - JetBrainsMono
-        - SourceCodePro
 
   - type: gschema-overrides
     include:
