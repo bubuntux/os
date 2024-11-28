@@ -1,7 +1,7 @@
 name: bluebuild
 on:
   schedule:
-    - cron: "00 18 * * *" # build at 18:00 UTC every day
+    - cron: "20 7 * * *" # build at 7:20 UTC every day
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
@@ -20,8 +20,9 @@ jobs:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
-          - nvidia.yml
-          - recipe.yml
+          - sway.yml
+          - sway-nvidia.yml
+          - sway-nvidia-open.yml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.7

@@ -1,0 +1,47 @@
+modules:
+  - type: files
+    files:
+      - usr: /usr
+
+  - type: systemd
+    user:
+      enabled:
+        - kanshi.service
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)"
+      install:
+        - com.discordapp.Discord
+        - com.github.tchx84.Flatseal
+        - com.slack.Slack
+        - com.valvesoftware.Steam
+        - com.protonvpn.www
+        - org.fedoraproject.MediaWriter
+        - org.gimp.GIMP
+        - org.gnome.Calculator
+        - org.gnome.Firmware
+        - org.gnome.SimpleScan
+        - org.gnome.TextEditor
+        - org.gnome.baobab
+        - org.gnome.Loupe
+        - org.gnome.meld
+        - org.inkscape.Inkscape
+        - org.kde.okular
+        - io.gitlab.librewolf-community
+        - com.spotify.Client
+        - org.videolan.VLC
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - DejaVuSansMono
+        - FiraCode
+        - Hack
+        - JetBrainsMono
+        - SourceCodePro
+
+  - type: signing

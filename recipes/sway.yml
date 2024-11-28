@@ -1,9 +1,8 @@
 name: os-sway
 description: Bubuntux OS
 
-base-image: ghcr.io/ublue-os/sericea-main
+base-image: ghcr.io/wayblueorg/sway
 image-version: latest
 
 modules:
-  - type: rpm-ostree
   - from-file: common.yml

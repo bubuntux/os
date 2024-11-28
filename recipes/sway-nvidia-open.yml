@@ -1,0 +1,8 @@
+name: os-sway-nvidia-open
+description: Bubuntux OS nvidia open
+
+base-image: ghcr.io/wayblueorg/sway-nvidia-open
+image-version: latest
+
+modules:
+  - from-file: common.yml

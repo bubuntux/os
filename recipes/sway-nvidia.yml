@@ -1,9 +1,8 @@
 name: os-sway-nvidia
 description: Bubuntux OS nvidia
 
-base-image: ghcr.io/ublue-os/sericea-nvidia
+base-image: ghcr.io/wayblueorg/sway-nvidia
 image-version: latest
 
 modules:
-  - type: rpm-ostree
   - from-file: common.yml
