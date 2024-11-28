@@ -2,7 +2,18 @@ modules:
   - type: files
     files:
       - usr: /usr
-
+      
+  - type: rpm-ostree
+    install:
+      #- akmod-intel-ipu6
+      - adwaita-gtk2-theme
+      - libadwaita
+      - clipman
+      - gammastep
+    remove:
+      #- firefox
+      #- firefox-langpacks
+      
   - type: systemd
     user:
       enabled:
