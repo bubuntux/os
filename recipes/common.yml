@@ -10,6 +10,7 @@ modules:
       - libadwaita
       - clipman
       - gammastep
+      - wdisplays
     remove:
       #- firefox
       #- firefox-langpacks
