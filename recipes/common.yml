@@ -16,6 +16,10 @@ modules:
       #- firefox
       #- firefox-langpacks
       
+  - type: akmods
+    install:
+      - v4l2loopback
+
   - type: systemd
     user:
       enabled:
