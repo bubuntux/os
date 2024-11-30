@@ -6,3 +6,4 @@ image-version: latest
 
 modules:
   - from-file: common.yml
+  - from-file: nvidia.yml
