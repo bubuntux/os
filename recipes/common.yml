@@ -3,7 +3,11 @@ modules:
     files:
       - source: system
       - destination: /
-      
+   
+  - type: script
+    snippets:
+      - "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir /usr/bin"
+
   - type: rpm-ostree
     install:
       #- akmod-intel-ipu6
