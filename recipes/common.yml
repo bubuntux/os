@@ -3,7 +3,7 @@ modules:
     files:
       - source: system
       - destination: /
-   
+
   - type: script
     snippets:
       - "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir /usr/bin"
@@ -19,7 +19,7 @@ modules:
     remove:
       #- firefox
       #- firefox-langpacks
-      
+
   #- type: akmods
   #  install:
   #    - v4l2loopback
