@@ -23,6 +23,7 @@ jobs:
           - sway.yml
           - sway-nvidia.yml
           - sway-nvidia-open.yml
+          - hyprland-nvidia-open.yml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.7

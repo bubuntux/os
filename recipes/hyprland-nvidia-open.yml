@@ -1,0 +1,9 @@
+name: os-hyprland-nvidia-open
+description: Bubuntux OS nvidia open
+
+base-image: ghcr.io/wayblueorg/hyprland-nvidia-open
+image-version: latest
+
+modules:
+  - from-file: common.yml
+  - from-file: nvidia.yml
