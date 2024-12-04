@@ -64,5 +64,8 @@ modules:
         - Hack
         - JetBrainsMono
         - SourceCodePro
+      google-fonts:
+        - Roboto
+        - Open Sans
 
   - type: signing
