@@ -7,7 +7,7 @@ modules:
   - type: script
     snippets:
       - "curl -sS https://starship.rs/install.sh | sh -s -- --yes --bin-dir /usr/bin"
-      - "curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm"
+      - "curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm --no-start-daemon"
 
   - type: rpm-ostree
     install:
