@@ -17,7 +17,7 @@ modules:
       - clipman
       - gammastep
       - wdisplays
-    remove:
+    #remove:
       #- firefox
       #- firefox-langpacks
 
@@ -48,9 +48,9 @@ modules:
         - org.gnome.meld
         - org.inkscape.Inkscape
         - org.kde.okular
-        #- io.gitlab.librewolf-community
         - com.spotify.Client
         - org.videolan.VLC
+        #- io.gitlab.librewolf-community
 
   - type: fonts
     fonts:
