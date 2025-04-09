@@ -17,6 +17,7 @@ modules:
       - clipman
       - gammastep
       - wdisplays
+      - podman-compose
     #remove:
       #- firefox
       #- firefox-langpacks
