@@ -4,60 +4,60 @@ modules:
       - source: system
       - destination: /
 
-  - type: rpm-ostree
-    install:
-      #- akmod-intel-ipu6
-      - adwaita-gtk2-theme
-      - libadwaita
-      - clipman
-      - gammastep
-      - wdisplays
-      - podman-compose
-    #remove:
-      #- firefox
-      #- firefox-langpacks
+  # - type: rpm-ostree
+  #   install:
+  #     #- akmod-intel-ipu6
+  #     - adwaita-gtk2-theme
+  #     - libadwaita
+  #     - clipman
+  #     - gammastep
+  #     - wdisplays
+  #     - podman-compose
+  #   remove:
+  #    - firefox
+  #    - firefox-langpacks
 
   #- type: akmods
   #  install:
   #    - v4l2loopback
 
-  - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub (system-wide)"
-      install:
-        - com.discordapp.Discord
-        - com.github.tchx84.Flatseal
-        - com.slack.Slack
-        - com.valvesoftware.Steam
-        - com.protonvpn.www
-        - org.fedoraproject.MediaWriter
-        - org.gimp.GIMP
-        - org.gnome.Calculator
-        - org.gnome.Firmware
-        - org.gnome.SimpleScan
-        - org.gnome.TextEditor
-        - org.gnome.baobab
-        - org.gnome.Loupe
-        - org.gnome.meld
-        - org.inkscape.Inkscape
-        - org.kde.okular
-        - com.spotify.Client
-        - org.videolan.VLC
-        #- io.gitlab.librewolf-community
+  # - type: default-flatpaks
+  #   notify: true
+  #   system:
+  #     repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  #     repo-name: flathub
+  #     repo-title: "Flathub (system-wide)"
+  #     install:
+  #       - com.discordapp.Discord
+  #       - com.github.tchx84.Flatseal
+  #       - com.slack.Slack
+  #       - com.valvesoftware.Steam
+  #       - com.protonvpn.www
+  #       - org.fedoraproject.MediaWriter
+  #       - org.gimp.GIMP
+  #       - org.gnome.Calculator
+  #       - org.gnome.Firmware
+  #       - org.gnome.SimpleScan
+  #       - org.gnome.TextEditor
+  #       - org.gnome.baobab
+  #       - org.gnome.Loupe
+  #       - org.gnome.meld
+  #       - org.inkscape.Inkscape
+  #       - org.kde.okular
+  #       - com.spotify.Client
+  #       - org.videolan.VLC
+  #       #- io.gitlab.librewolf-community
 
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - DejaVuSansMono
-        - FiraCode
-        - Hack
-        - JetBrainsMono
-        - SourceCodePro
-      google-fonts:
-        - Roboto
-        - Open Sans
+  # - type: fonts
+  #   fonts:
+  #     nerd-fonts:
+  #       - DejaVuSansMono
+  #       - FiraCode
+  #       - Hack
+  #       - JetBrainsMono
+  #       - SourceCodePro
+  #     google-fonts:
+  #       - Roboto
+  #       - Open Sans
 
   - type: signing
